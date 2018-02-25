@@ -11,7 +11,6 @@ banMessage = "REGARDE CET MERDE IL EST BANNNNNNNNNNNNNNNNNNNNNN";
 
 bot.on('ready', function () {
   bot.user.setPresence({ game: { name: 'DrainCorp'}})
-  bot.user.setUsername("Bite");
   console.log("Bot DrainCorp Connecté est prés pour le piratage!")
 })
 
