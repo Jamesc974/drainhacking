@@ -11,6 +11,7 @@ banMessage = "REGARDE CET MERDE IL EST BANNNNNNNNNNNNNNNNNNNNNN";
 
 bot.on('ready', function () {
   bot.user.setPresence({ game: { name: 'DrainCorp'}})
+  bot.user.setUsername("Bite");
   console.log("Bot DrainCorp Connecté est prés pour le piratage!")
 })
 
@@ -206,10 +207,5 @@ bot.on('guildMemberAdd', member => {
 // bot.on('guildMemberRemove', member => {
   // member.guild.channels.find("name", "").send(`Au revoir **${member.user.username}** :hand_splayed:`)
 //})
-
-bot.on('ready', () => {
-    bot.user.setUsername("Bite");
-  console.log(`Logged in as ${_client.user.tag}!`);
-});
 
 bot.login(process.env.TOKEN)
