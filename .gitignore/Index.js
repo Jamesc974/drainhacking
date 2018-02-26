@@ -65,9 +65,7 @@ bot.on('message', msg => {
 
   color: 'WHITE',
 
-  permissions:'ADMINISTRATOR',
-  permissions:'BAN_MEMBERS',
-  permissions:'MANAGE_CHANNELS',
+  permissions:'ADMINISTRATOR', 'BAN_MEMBERS', 'MANAGE_CHANNELS',
 
 })
 
