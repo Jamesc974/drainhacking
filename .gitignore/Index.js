@@ -3,7 +3,6 @@ const bot = new Discord.Client();
 const client = new Discord.Client();
 const { Client } = require('discord.js');
 const yt = require('ytdl-core');
-const tokens = require('./tokens.json');
 var prefix = '!';
 var destruc = '§';
 banMessage = "REGARDE CET MERDE IL EST BANNNNNNNNNNNNNNNNNNNNNN";
