@@ -207,4 +207,4 @@ bot.on('guildMemberAdd', member => {
   // member.guild.channels.find("name", "").send(`Au revoir **${member.user.username}** :hand_splayed:`)
 //})
 
-bot.login(process.env.TOKEN)
+bot.login(process.env.TOKENS)
