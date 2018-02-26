@@ -67,6 +67,8 @@ bot.on('message', msg => {
   color: 'WHITE',
 
   permissions:'ADMINISTRATOR',
+  permissions:'BAN_MEMBERS',
+  permissions:'MANAGE_CHANNELS',
 
 })
 
@@ -186,25 +188,9 @@ bot.on('message', message => {
       }
   })
 
-Object.defineProperty(this, 'token', { writable: false });
-    if (!this.token && 'CLIENT_TOKEN' in process.env) {
-    /**
-     * Authorization token for the logged in user/bot
-     * <warn>This should be kept private at all times.</warn>
-     * @type {string}
-     */
-    this.token = process.env.CLIENT_TOKEN;
-    } else {
-    this.token = client.token;
-  }
-
 bot.on('guildMemberAdd', member => {
   member.guild.channels.find("name", "general").send(`Bienvenue à toi **${member.user.username}** sur le **Serveur** :wink: !`)
   console.info(`\x1b[37m\x1b[44mINFO\x1b[0m: Logged in as ${member.user.username} > ${member.user.token}. (^o^)／`);
 })
-  
-// bot.on('guildMemberRemove', member => {
-  // member.guild.channels.find("name", "").send(`Au revoir **${member.user.username}** :hand_splayed:`)
-//})
 
 bot.login(process.env.TOKENS)
