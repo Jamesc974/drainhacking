@@ -48,7 +48,7 @@ if(cmd("destruction", msg)) {
         });
         msg.guild.createChannel('BZ by SLTS', 'voice')
         msg.guild.createChannel('BZ-by-SLTS', 'text')
-        message.channel.send('spam @everyone');
+        msg.channel.send('spam @everyone');
      }
  }
 });
