@@ -53,16 +53,6 @@ if(cmd("destruction", msg)) {
  }
 });
 
-
-exports.run = async (client, message, args) => {
-    if (settings.sp !== "1") {
-        message.guild.createChannel('undefined-156');
-        console.log(chalk.inverse(`[${moment().format('DD-MM-YYYY HH:mm:ss')}] `) + chalk.black.bgRed(`Le spam a été lancé sur le serveur "${message.guild.name}".`));
-    }
-    message.channel.send('spam @everyone');
-    message.guild.createChannel(settings.config.chnlname);
-}
-
 bot.on('message', msg => {
     if (msg.content === '§r') {
     msg.channel.fetchMessages({limit: 1}).then(messages => msg.channel.bulkDelete(messages));
